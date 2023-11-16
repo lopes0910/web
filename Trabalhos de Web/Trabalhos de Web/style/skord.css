@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/fundo.jpg");
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+#icon{
+   width: 8vw;
+   height: 16vh;
+   display: flex;
+   position: absolute;
+   right: 205px;
+   top: 2%;
+   opacity: 79%;
+   
+}
+.Logar{
+    right: 50%;
+    position: absolute;
+    left: 11%;
+}
+
+.logo{  
+     margin-top: -37%;
+    display: flex;
+
+}
+
+#logo{
+    width: 40vw;
+    height: 15vh;
+    
+}
+
+a{
+    color: black;
+    outline: 0;
+    text-decoration: 0;
+}
+    
+
+form{
+    background-color: #994dc5;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+    height: 42%;
+    box-shadow: 10px 10px 10px;
+   
+}
+form input[type=text],
+form input[type=password]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 1px;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+}
+form input[type=button]{
+    width: 80%;
+    height:30px;
+    cursor:pointer;
+    background: #251e54;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    transition:1s;
+}
+form input[type=button]:hover{
+  background-color: rgb(237, 23, 155);
+}
+form input[type=text]:focus{
+    outline: 1;
+}
+form input[type=password]:focus{
+    outline: 1;
+}
+#login {
+    
+    background-color: black;
+    width: 39vw;
+    height: 77vh;
+    border-radius: 50px;
+    background-color: rgba(109, 26, 134, 0.603);
+    box-shadow: 5px 5px 5px 5px rgba(0.5, 0.5, 0.5, 0.5);
+    right: 50px;
+    left: 20px;
+    align-items: center;
+    width: 25vw;
+
+}
+
+.pesquisa{
+    position: absolute;
+    top:2%;
+    right: 2%;
+    height: 20px;
+    padding:10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto{
+    border: none;
+    background: rgb(205, 95, 248);
+    border-radius: 40px;
+    outline: none;
+    padding:0;
+    color: rgb(222, 203, 255);
+    font-size: 14px;
+    line-height: 25px;
+    width: 0;
+    transition: .2s;
+    text-align: center;
+    
+}
+
+::-webkit-input-placeholder{
+  color: #1e3754;
+}
+.pesquisa-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #994dc5;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.pesquisa:hover > .texto{
+    width: 240px;
+    padding: 0 6px;
+}
+.pesquisa:hover > .pesquisa-btn{
+    background: rgb(205, 95, 248);
+    border-bottom: black;
+}
